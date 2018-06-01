@@ -1,0 +1,39 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "loadBalancerName": {
+            "value": "hlfhktnv3-LB"
+        },
+        "dnsHostName": {
+            "value": "hlfhktnv3"
+        },
+        "loadBalancerBackendAddressPoolName": {
+            "value": "LBBackendPool"
+        },
+        "loadBalancerInboundNatRuleNamePrefix": {
+            "value": "NAT"
+        },
+        "frontendPort1": {
+            "value": 80
+        },
+        "backendPort1": {
+            "value": 3000
+        },
+        "numInboundNATRules": {
+            "value": 7
+        },
+        "inboundNATRuleSSHStartingPort": {
+            "value": 3000
+        },
+        "inboundNATRuleSSHBackendPort": {
+            "value": 22
+        },
+        "publicIPAddressName": {
+            "value": "hlfhktnv3-publicip"
+        },
+        "location": {
+            "value": "eastus"
+        }
+    }
+}
