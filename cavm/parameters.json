@@ -1,0 +1,68 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "apiVersionVirtualMachines": {
+            "value": "2017-03-30"
+        },
+        "apiVersionNetworkInterfaces": {
+            "value": "2016-09-01"
+        },
+        "storagePerformance": {
+            "value": "Standard_LRS"
+        },
+        "loadBalancerName": {
+            "value": "hlfhktnv3-LB"
+        },
+        "loadBalancerBackendAddressPoolName": {
+            "value": "LBBackendPool"
+        },
+        "loadBalancerInboundNatRuleNamePrefix": {
+            "value": "NAT"
+        },
+        "subnetRef": {
+            "value": "/subscriptions/4f824327-c734-4d8f-ba07-05fb156a2a2c/resourceGroups/chainworks/providers/Microsoft.Network/virtualNetworks/hlfhktnv3vnet/subnets/iwq4ngrddhzde"
+        },
+        "vmNamePrefix": {
+            "value": "hlfhktnv3-ca"
+        },
+        "numVMs": {
+            "value": 1
+        },
+        "offset": {
+            "value": 0
+        },
+        "nicPrefix": {
+            "value": "nic-ca"
+        },
+        "availabilitySetName": {
+            "value": "hlfhktnv3fabricAvSet"
+        },
+        "vmSize": {
+            "value": "Standard_D1_v2"
+        },
+        "adminUsername": {
+            "value": "chainworksllc"
+        },
+        "adminPassword": {
+            "value": null
+        },
+        "adminSSHKey": {
+            "value": ""
+        },
+        "ubuntuImage": {
+            "value": {
+                "publisher": "Canonical",
+                "offer": "UbuntuServer",
+                "sku": "16.04-LTS",
+                "version": "16.04.201801120"
+            }
+        },
+        "namingInfix": {
+            "value": "hlfhktnv3"
+        },
+        "location": {
+            "value": "eastus"
+        }
+    }
+}
